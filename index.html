@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+   <link href="style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <main>
+<div><img id="girasol" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px height=225px/>
+</div>
+<div><img id="girasol2" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px height=225px/>
+</div>
+<section>
+  <div class="row">
+  <div class="col-sm-4 col-md-4 col-lg-3"></div>
+  <div class="col-sm-4 col-md-4 col-lg-6 contenedorRopaYBoton">
+  <div id="contenedorBotones" class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3 contenedorBoton">
+<button class="random-button" id="random-btn" onclick="aleatorio()">Random</button>
+</div>
+<!--<button class="button" id="selection-btn" onclick="eleccion()">vestido o remera</button>-->
+<div class="col-sm-12 col-md-6 col-lg-3 contenedorBoton">
+<button class="button" id="selection-buzo" onclick="eleccionBuzo()">¿ Buzo/Campera ?</button>
+</div>
+<div class="col-sm-12 col-md-6 col-lg-3 contenedorBoton">
+<button class="button" id="selection-abrigo" onclick="eleccionAbrigo()">¿ Abrigo ?</button>
+</div>
+<div class="col-sm-12 col-md-6 col-lg-3 contenedorBoton">
+<button class="button" id="girasolBoton" onclick="giraGira()">Girasoles</button>
+</div>
+</div>
+<!--<button class="button" id="girasolBoton" onclick="giraGira2()">Mas Girasoles</button>-->
+
+
+<!--<div id="vestidosOcultos" class="clothes-container" style="display: none;">
+  <img id="dress"  src="" width="220" height="490" alt="vestidos" />
+  <div class="carousel-buttons">
+    <button id="dressPrevBtn" onclick="vestidosPrev()">←</button>
+    <button id="dressNewxtBtn" onclick="vestidosNext()">→</button>
+  </div>
+</div>-->
+<div class="row">
+<div class="col-sm-6 col-md-6 col-lg-6 contenedorRopa">
+<div id="remerasOcultas" class="clothes-container" style="display: block;">
+  <img id="shirts" class="ropa" src="" width="220" height="220" alt="remeras" />
+  <div class="carousel-buttons">
+    <button id="shirtsPrevBtn" onclick="remerasPrev()">←</button>
+    <button id="shirtsNewxtBtn" onclick="remerasNext()">→</button>
+  </div>
+</div>
+
+<div class="clothes-container" id="buzosOcultos" style="display: block;">
+  <img id="jackets" class="ropa" src="" width="220" height="220" alt="buzos" />
+  <div class="carousel-buttons">
+    <button id="jacketsPrevBtn" onclick="buzosPrev()">←</button>
+    <button id="jacketsNextBtn" onclick="buzosNext()">→</button>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-6 col-lg-6 contenedorRopa">
+<div class="clothes-container" id="abrigosOcultos" style="display: block;">
+  <img id="coats" class="ropa" src="" width="220" height="220" alt="abrigos" />
+  <div class="carousel-buttons">
+    <button id="coatsPrevBtn" onclick="abrigosPrev()">←</button>
+    <button id="coatsNextBtn" onclick="abrigosNext()">→</button>
+</div>
+</div>
+
+<div id="pantalonesOcultos" class="clothes-container" style="display: block;">
+  <img id="pants" class="ropa" src="" width="220" height="220" alt="pantalones" />
+  <div class="carousel-buttons">
+    <button id="pantsPrevBtn" onclick="pantalonesPrev()">←</button>
+    <button id="pantsNewxtBtn" onclick="pantalonesNext()">→</button>
+    </div>
+  </div>
+  </div>
+<!--cierro col de ropa-->
+  </div>
+<!--cierro row de botones y ropa-->
+</div>
+<!--cierro col de botones y ropa que englobaba al row-->
+  <div class="col-sm-4 col-md-4 col-lg-3"></div>
+</div>
+
+<div><img id="girasol3" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px height=225px/>
+</div>
+<div><img id="girasol4" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px height=225px/>
+</div>
+<!--<div><img id="girasol5" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px eight=225px/>
+</div>
+<div><img id="girasol6" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px eight=225px/>
+</div>
+</div>-->
+  </main>
+  <script src="ropa.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
