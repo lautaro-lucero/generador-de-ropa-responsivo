@@ -3,7 +3,10 @@ html {
   justify-content: center; 
   font-family: sans-serif;
   height: 100%;
-  width: 100%;
+}
+
+body {
+  background-color: #ff5f1f;
 }
 
 section {
@@ -12,7 +15,12 @@ section {
 }
 
 .row {
-  margin: 20px;
+  margin: 0;
+}
+
+.contenedorRopaYBoton {
+  border: solid gray 2px;
+  border-bottom: solid gray 270px;
 }
 
 #contenedorBotones {
@@ -21,14 +29,64 @@ section {
   margin-top: 0;
 }
 
+.contenedorBoton {
+  display: grid;
+  place-items: center;
+}
+
 .clothes-container {
   margin: 10px;
+ display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.overlay img {
+  z-index: 0; /* Asegura que la imagen esté por debajo del texto */
+}
+
+.text-overlay {
+  position: relative;
+  color: white; /* Color del texto */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  padding: 10px; /* Espaciado interno */
+  text-align: center; /* Centra el texto dentro del overlay */
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+  width: 100%;
+}
+
+#girasolBoton {
+  background: yellow;
+  color: black;
+}
+
+.ropa {
+  display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+}
+
+.carousel-buttons {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.button, .random-button {
+  width: 100%;
+    height:100%;
+}
+
+.vacio {
+  background: gray;
 }
 
 .opaco {
   animation: spin 3s linear infinite;
   opacity: 0;
-  transition: opacity 1s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 .visible {
@@ -47,29 +105,30 @@ section {
 #girasol {
 text-align: right;
 position: fixed;
-left: 20px;
+left: 40px;
 top: 70px;
 }
 
 #girasol2 {
 text-align: right;
 position: fixed;
-left: 20px;
+left: 40px;
 top: 350px;
 }
 
 #girasol3 {
   position: fixed;
-right: 20px;
+right: 40px;
 top: 70px;
 }
 
 #girasol4 {
 text-align: right;
 position: fixed;
-right: 20px;
+right: 40px;
 top: 350px;
 }
+
 
 button {
   color: white;
@@ -94,19 +153,24 @@ button:hover {
   background-color: #d90166; 
 }
 
+#girasolBoton:hover {
+  background-color: #d90166; 
+  color: white;
+}
+
 @media (max-width: 428px) {
   html {
     display: flex;
   }
 
   .row {
-   display: grid;
+    display: grid;
   place-items: center;
   }
 
   .contenedorBoton {
-   margin: 10px;
-    display: grid;
+  margin: 10px;
+  display: grid;
   place-items: center;
   }
 
@@ -115,8 +179,11 @@ button:hover {
     display: flex;
       justify-content: center;
       align-items: center;
-
   }
+
+  .carousel-buttons {
+padding-right: 0;
+}
 
   button {
     margin: 5px;
@@ -128,8 +195,14 @@ button:hover {
       align-items: center;
   }
 
+  .girasolesContent {
+display: flex;
+  justify-content: center; 
+  align-items: center; 
+  }
+
   .opaco {
-    width: 100%;
+   width: 100%;
     height:100%;
      display: flex;
   justify-content: center; 
@@ -140,55 +213,6 @@ button:hover {
   .ropa {
     width: 100%;
     height: 100%;
-  }
-
-#girasol, #girasol2, #girasol3, #girasol4 {
-  width: 70px;
-  height: 70px;
-}
-
-#girasol {
-  left: 35px;
-  top: 30px;
-}
-
-#girasol2 {
-  left: 35px;
-  top: 110px;
-}
-
-#girasol3 {
-  right: 35px;
-  top: 30px;
-}
-
-#girasol4 {
-  right: 35px;
-  top: 110px;
-}
-}
-
-@media (max-width: 810px) {
-html {
-    display: flex;
-  }
-
-  .row {
-   display: grid;
-  place-items: center;
-  }
-
-  .contenedorRopa {
-   margin: 5px;
-    display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .clothes-container {
-    display: flex;
-      justify-content: center;
-      align-items: center;
   }
 
   #girasol, #girasol2, #girasol3, #girasol4 {
@@ -203,6 +227,35 @@ html {
 
 #girasol2 {
   left: 35px;
+  top: 100px;
+}
+
+#girasol3 {
+  right: 35px;
+  top: 10px;
+}
+
+#girasol4 {
+  right: 35px;
+  top: 100px;
+}
+}
+
+@media (max-width: 810px) {
+
+
+  /*#girasol, #girasol2, #girasol3, #girasol4 {
+  width: 70px;
+  height: 70px;
+}
+
+#girasol {
+  left: 35px;
+  top: 10px;
+}
+
+#girasol2 {
+  left: 35px;
   top: 180px;
 }
 
@@ -214,5 +267,5 @@ html {
 #girasol4 {
   right: 35px;
   top: 180px;
-}
+}*/
 }
