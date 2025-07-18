@@ -17,8 +17,8 @@
 </div>
 <section>
   <div class="row">
-  <div class="col-sm-4 col-md-4 col-lg-3"></div>
-  <div class="col-sm-4 col-md-4 col-lg-6 contenedorRopaYBoton">
+  <div class="col-sm-4 col-md-0 col-lg-3 vacio"></div>
+  <div class="col-sm-4 col-md-12 col-lg-6 contenedorRopaYBoton">
   <div id="contenedorBotones" class="row">
           <div class="col-sm-12 col-md-6 col-lg-3 contenedorBoton">
 <button class="random-button" id="random-btn" onclick="aleatorio()">Random</button>
@@ -47,25 +47,40 @@
 <div class="row">
 <div class="col-sm-6 col-md-6 col-lg-6 contenedorRopa">
 <div id="remerasOcultas" class="clothes-container" style="display: block;">
-  <img id="shirts" class="ropa" src="" width="220" height="220" alt="remeras" />
+  <div class="overlay">
+  <img id="shirts" class="ropa" src="" width="210" height="210" alt="REMERAS" />
+  <div class="text-overlay">
+    <h2>REMERAS</h2>
+  </div>
+  </div>
   <div class="carousel-buttons">
     <button id="shirtsPrevBtn" onclick="remerasPrev()">←</button>
     <button id="shirtsNewxtBtn" onclick="remerasNext()">→</button>
   </div>
-</div>
+  </div>
 
 <div class="clothes-container" id="buzosOcultos" style="display: block;">
-  <img id="jackets" class="ropa" src="" width="220" height="220" alt="buzos" />
+  <div class="overlay">
+  <img id="jackets" class="ropa" src="" width="210" height="210" alt="BUZOS/CAMPERAS"/>
+<div class="text-overlay">
+  <h2>BUZOS/CAMPERAS</h2>
+</div>
+</div>  
   <div class="carousel-buttons">
     <button id="jacketsPrevBtn" onclick="buzosPrev()">←</button>
     <button id="jacketsNextBtn" onclick="buzosNext()">→</button>
   </div>
 </div>
 </div>
-
+  
 <div class="col-sm-6 col-md-6 col-lg-6 contenedorRopa">
 <div class="clothes-container" id="abrigosOcultos" style="display: block;">
-  <img id="coats" class="ropa" src="" width="220" height="220" alt="abrigos" />
+  <div class="overlay">
+  <img id="coats" class="ropa" src="" width="210" height="210" alt="ABRIGOS"/>
+<div class="text-overlay">
+  <h2>ABRIGOS</h2>
+</div>
+</div>
   <div class="carousel-buttons">
     <button id="coatsPrevBtn" onclick="abrigosPrev()">←</button>
     <button id="coatsNextBtn" onclick="abrigosNext()">→</button>
@@ -73,7 +88,12 @@
 </div>
 
 <div id="pantalonesOcultos" class="clothes-container" style="display: block;">
-  <img id="pants" class="ropa" src="" width="220" height="220" alt="pantalones" />
+  <div class="overlay">
+  <img id="pants" class="ropa" src="" width="210" height="210" alt="PANTALONES"/>
+<div class="text-overlay">
+  <h2>PANTALONES</h2>
+</div>
+</div>  
   <div class="carousel-buttons">
     <button id="pantsPrevBtn" onclick="pantalonesPrev()">←</button>
     <button id="pantsNewxtBtn" onclick="pantalonesNext()">→</button>
@@ -85,7 +105,7 @@
 <!--cierro row de botones y ropa-->
 </div>
 <!--cierro col de botones y ropa que englobaba al row-->
-  <div class="col-sm-4 col-md-4 col-lg-3"></div>
+  <div class="col-sm-4 col-md-0 col-lg-3 vacio"></div>
 </div>
 
 <div><img id="girasol3" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px height=225px/>
