@@ -25,7 +25,7 @@ const remeras = ["prendas de sol/remeras/chomba gris varios botones.jpg", "prend
     "prendas de sol/remeras/top rojo claro.jpg", "prendas de sol/remeras/top rosa cremita.jpg"];
 
 const pantalones = ["prendas de sol/pantalones/jean azul acampanado.jpg", "prendas de sol/pantalones/jean azul de tiro recto.jpg", "prendas de sol/pantalones/jean azul muy roto.jpg", 
-"prendas de sol/pantalones/jean azul roto.jpg", "prendas de sol/pantalones/jean azul.jpg", "prendas de sol/pantalones/jean gris claro ajustado y acampanado.jpg", "prendas de sol/pantalones/jean gris oscuro.jpg", "prendas de sol/pantalones/jean negro acampanado.jpg", 
+"prendas de sol/pantalones/jean azul roto.jpg", "prendas de sol/pantalones/jean azul.jpg", "prendas de sol/pantalones/jean gris claro ajustado y acampanado.jpg", "prendas de sol/pantalones/jean gris oscuro.jpg", "prendas de sol/pantalones/jean negro.jpg" "prendas de sol/pantalones/jean negro acampanado.jpg", 
 "prendas de sol/pantalones/jean negro acartonado.jpg", "prendas de sol/pantalones/jean negro ajustado y acampanado.jpg", "prendas de sol/pantalones/jean negro sin detalles.jpg", "prendas de sol/pantalones/jean negro.jpg", 
 "prendas de sol/pantalones/pantalon gris.jpg", "prendas de sol/pantalones/pantalon marron oscuro (ponele).jpg", "prendas de sol/pantalones/pantalon rosa.jpg"]
 
